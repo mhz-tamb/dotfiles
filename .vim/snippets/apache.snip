@@ -1,0 +1,14 @@
+snippet rr
+	RewriteRule ^${0:TARGET}$ [R=301,L] 
+
+snippet i2r
+	RewriteCond %{THE_REQUEST} ^.*/index.php
+	RewriteRule ^(.*)index.php$ http://%{HTTP_HOST}/\$1 [R=301,L]
+
+snippet n2w
+	RewriteCond %{HTTP_HOST} !^www\.(.*) [NC]
+	RewriteRule ^(.*)$ http://www.%1/\$1 [R=301,L]
+
+snippet w2n
+	RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+	RewriteRule ^(.*)$ http://%1/\$1 [R=301,L]
