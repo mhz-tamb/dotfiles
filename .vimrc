@@ -14,7 +14,6 @@ call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 
-NeoBundle "tpope/vim-fugitive"
 NeoBundle "majutsushi/tagbar"
 NeoBundle "mattn/emmet-vim"
 NeoBundle "bling/vim-airline"
@@ -22,12 +21,13 @@ NeoBundle "scrooloose/nerdtree"
 NeoBundle "jistr/vim-nerdtree-tabs"
 NeoBundle "scrooloose/syntastic"
 NeoBundle "scrooloose/nerdcommenter"
-NeoBundle "Shougo/neosnippet"
 NeoBundle "Raimondi/delimitMate"
 NeoBundle "powerman/vim-plugin-ruscmd"
 NeoBundle "flazz/vim-colorschemes"
 NeoBundle "ap/vim-css-color"
 NeoBundle "Shougo/neocomplete"
+NeoBundle "Shougo/neosnippet"
+NeoBundle "tpope/vim-fugitive"
 
 syntax on
 colorscheme xoria256 
@@ -82,7 +82,6 @@ let g:syntastic_enable_balloons = 1
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
   \ "\<Plug>(neosnippet_expand_or_jump)"
@@ -90,7 +89,6 @@ imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
   \ "\<Plug>(neosnippet_expand_or_jump)"
   \: "\<TAB>"
-
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 map <F2> :NERDTreeTabsToggle<CR>
