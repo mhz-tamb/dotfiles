@@ -6,30 +6,30 @@ URxvt.iso14755: False
 
 URxvt.perl-ext-common: matcher,url-select
 
-URxvt.url-select.launcher:	firefox
-URxvt.underlineURLs:  			true
-URxvt.keysym.M-u:     			perl:url-select:select_next
-URxvt.keysym.M-s:						perl:keyboard-select:search
+URxvt.url-select.launcher: firefox
+URxvt.underlineURLs:       true
+URxvt.keysym.M-u:          perl:url-select:select_next
+URxvt.keysym.M-s:          perl:keyboard-select:search
 
-URxvt.color0         : #444444
-URxvt.color1         : #d78787
-URxvt.color2         : #afd787
-URxvt.color3         : #f7f7af
-URxvt.color4         : #87afd7
-URxvt.color5         : #d7afd7
-URxvt.color6         : #87afd7
-URxvt.color7         : #e6e6e6
-URxvt.color8         : #0a0a0a
-URxvt.color9         : #df8787
-URxvt.color10        : #afdf87
-URxvt.color11        : #ffffaf
-URxvt.color12        : #87afdf
-URxvt.color13        : #dfafdf
-URxvt.color14        : #87afd7
-URxvt.color15        : #eeeeee
-URxvt.colorBD        : #afafdf
-URxvt.colorIT        : _colorIT
-URxvt.colorUL        : #dfdfaf
-URxvt.foreground     : #d0d0d0
-URxvt.background     : #1c1c1c
-URxvt.cursorColor    : #ffaf00
+URxvt.color0      : #444444
+URxvt.color1      : #d78787
+URxvt.color2      : #afd787
+URxvt.color3      : #f7f7af
+URxvt.color4      : #87afd7
+URxvt.color5      : #d7afd7
+URxvt.color6      : #87afd7
+URxvt.color7      : #e6e6e6
+URxvt.color8      : #0a0a0a
+URxvt.color9      : #df8787
+URxvt.color10     : #afdf87
+URxvt.color11     : #ffffaf
+URxvt.color12     : #87afdf
+URxvt.color13     : #dfafdf
+URxvt.color14     : #87afd7
+URxvt.color15     : #eeeeee
+URxvt.colorBD     : #afafdf
+URxvt.colorIT     : _colorIT
+URxvt.colorUL     : #dfdfaf
+URxvt.foreground  : #d0d0d0
+URxvt.background  : #1c1c1c
+URxvt.cursorColor : #ffaf00

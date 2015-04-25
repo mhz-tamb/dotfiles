@@ -1,11 +1,11 @@
 if !1 | finish | endif
 
 if has('vim_starting')
-	if &compatible
-		set nocompatible
-	endif
-	
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
+  if &compatible
+    set nocompatible
+  endif
+  
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -39,12 +39,12 @@ set cursorline
 set ignorecase
 set nocompatible
 
+set expandtab
 set shiftwidth=2
 set tabstop=2
 set laststatus=2
 set mouse=a
 set t_Co=256
-
 
 set foldmethod=indent
 set foldnestmax=10
@@ -85,11 +85,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-			\ "\<Plug>(neosnippet_expand_or_jump)"
-			\: pumvisible() ? "\<C-n>" : "\<TAB>"
+  \ "\<Plug>(neosnippet_expand_or_jump)"
+  \: pumvisible() ? "\<C-n>" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-			\ "\<Plug>(neosnippet_expand_or_jump)"
-			\: "\<TAB>"
+  \ "\<Plug>(neosnippet_expand_or_jump)"
+  \: "\<TAB>"
 
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 
