@@ -1,0 +1,19 @@
+#!/bin/sh
+
+feh --bg-scale ~/.background-image.jpg &
+unclutter -idle 2 &
+
+while true
+do
+	delimiter=$(echo -e "\x05<\x01")	
+	volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"	
+  
+  if [ "$(xset -q|grep LED| awk '{ print $10 }'|cut -c5)" -eq 0 ]; then 
+    lang="En" 
+  else 
+    lang="Ru";
+  fi
+	
+	xsetroot -name "${lang} ${delimiter} ${volume}% ${delimiter} $(date +'%R')"
+	sleep 0.3s
+done &
