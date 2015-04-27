@@ -1,1 +1,5 @@
 colorscheme solarized-dark
+
+filetype *.pdf apvlv %f &
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm feh -rFXZ %f > /dev/null 2>&1 &
+filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv mplayer %f > /dev/null 2>&1 &
