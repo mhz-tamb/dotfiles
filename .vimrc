@@ -30,7 +30,8 @@ NeoBundle "Shougo/neosnippet"
 NeoBundle "tpope/vim-fugitive"
 
 syntax on
-colorscheme xoria256 
+colorscheme solarized 
+set background=dark
 
 set nu
 set nowrap
@@ -38,8 +39,8 @@ set showmatch
 set cursorline
 set ignorecase
 set nocompatible
-
 set expandtab
+
 set shiftwidth=2
 set tabstop=2
 set laststatus=2
@@ -76,7 +77,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#enabled = 1
 
 let g:airline_powerline_fonts=1
-let g:airline_theme='powerlineish'
+let g:airline_theme='solarized'
 
 let g:syntastic_enable_balloons = 1
 
