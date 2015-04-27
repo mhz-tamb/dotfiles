@@ -4,3 +4,6 @@
 [submodule ".vimperator/colors"]
 	path = .vimperator/colors
 	url = https://github.com/vimpr/vimperator-colors.git
+[submodule ".vifm/colors"]
+	path = .vifm/colors
+	url = https://github.com/vifm/vifm-colors.git
