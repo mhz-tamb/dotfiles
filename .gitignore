@@ -1,1 +1,9 @@
+*
 !.gitignore
+!.gitmodules
+!.vimrc
+!.vimperatorrc
+!.Xdefaults
+!.vim/*
+!.dwm/*
+!.vimperator/*
