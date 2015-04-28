@@ -25,7 +25,6 @@ NeoBundle "Raimondi/delimitMate"
 NeoBundle "powerman/vim-plugin-ruscmd"
 NeoBundle "flazz/vim-colorschemes"
 NeoBundle "ap/vim-css-color"
-NeoBundle "Shougo/neocomplete"
 NeoBundle "Shougo/neosnippet"
 NeoBundle "tpope/vim-fugitive"
 
