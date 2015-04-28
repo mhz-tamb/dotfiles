@@ -6,6 +6,10 @@
 !.vimrc
 !.vimperatorrc
 
+!.config/
+!.config/dunst/
+!.config/dunst/dunstrc
+
 !.dwm/
 !.dwm/dwmrc
 !.dwm/config.example
