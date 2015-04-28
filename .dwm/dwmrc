@@ -1,19 +1,32 @@
 #!/bin/sh
 
-feh --bg-scale ~/.background-image.jpg &
-unclutter -idle 2 &
+source "${HOME}/.dwm/config"
+
+
+if [[ -f "${background_image}" && `file -i "${background_image}" | cut -s -d ' ' -f 2` =~ ^image/* ]]; then
+  feh --bg-scale "${background_image}" &
+fi
+
+if [[ -z "${show_battery}" || ! -f "${battery_device}/capacity" || ! -f "${$adapter_device}/online" ]]; then
+  show_battery=0
+fi
 
 while true
 do
   delimiter=$(echo -e "\x05<\x01")  
-  volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')" 
+
+  if [[ ${show_battery} -eq 1 ]]; then
+    battery_status="${delimiter} `cat "${battery_device}/capacity"`% `[[ $(cat "${adapter_device}/online") -eq 1 ]] && echo AC || echo DC`"
+  fi
+
+  volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%" 
   
-  if [ "$(xset -q|grep LED| awk '{ print $10 }'|cut -c5)" -eq 0 ]; then 
+  if [ "$(xset -q | grep LED | awk '{ print $10 }' | cut -c5)" -eq 0 ]; then 
     lang="En" 
   else 
     lang="Ru";
   fi
   
-  xsetroot -name "${lang} ${delimiter} ${volume}% ${delimiter} $(date +'%R')"
-  sleep 0.3s
+  xsetroot -name "${lang} ${delimiter} ${volume} ${battery_status} ${delimiter} $(date +'%R')"
+  sleep 0.5s
 done &
