@@ -1,7 +1,8 @@
 #!/bin/sh
 
-source "${HOME}/.dwm/config"
-
+if [[ -f "${HOME}/.dwm/config" ]]; then
+  source "${HOME}/.dwm/config"
+fi
 
 if [[ -f "${background_image}" && `file -i "${background_image}" | cut -s -d ' ' -f 2` =~ ^image/* ]]; then
   feh --bg-scale "${background_image}" &
