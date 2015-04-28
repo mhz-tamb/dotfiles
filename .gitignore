@@ -1,15 +1,24 @@
 *
-!*.gitignore
+!.gitignore
 !.gitmodules
 
 !.Xdefaults
 !.vimrc
 !.vimperatorrc
 
+!.dwm/
 !.dwm/dwmrc
 !.dwm/config.example
 
+!.vim/
+!.vim/bundle/
+!.vim/bundle/neobundle.vim/
+!.vim/snippets/
 !.vim/snippets/*
+
+!.vifm/
+!.vifm/colors/
 !.vifm/vifmrc
 
 !.vimperator/
+!.vimperator/colors/

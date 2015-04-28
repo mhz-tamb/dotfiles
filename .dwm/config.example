@@ -1,0 +1,8 @@
+#!/bin/sh
+
+background_image="${HOME}/.background-image.jpg"
+
+show_battery=0
+
+battery_device="/sys/class/power_supply/BAT0"
+adapter_device="/sys/class/power_supply/AC"
