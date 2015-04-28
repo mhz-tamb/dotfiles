@@ -1,20 +1,14 @@
 *
-!.gitignore
+!*.gitignore
 !.gitmodules
 
+!.Xdefaults
 !.vimrc
 !.vimperatorrc
-!.Xdefaults
+!.dwm/dwmrc
 
-!.vim/
+!.vim/snippets/*
 !.vim/*
 
-!.vifm/
 !.vifm/*
-
-!.dwm/
-!.dwm/*
-.dwm/config
-
-!.vimperator/
 !.vimperator/*
