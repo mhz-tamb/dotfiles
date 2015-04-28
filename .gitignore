@@ -5,10 +5,11 @@
 !.Xdefaults
 !.vimrc
 !.vimperatorrc
+
 !.dwm/dwmrc
+!.dwm/config.example
 
 !.vim/snippets/*
-!.vim/*
+!.vifm/vifmrc
 
-!.vifm/*
-!.vimperator/*
+!.vimperator/
