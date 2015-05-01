@@ -2,9 +2,10 @@
 !.gitignore
 !.gitmodules
 
-!.Xdefaults
+!.bashrc
 !.vimrc
 !.vimperatorrc
+!.Xdefaults
 
 !.config/
 !.config/dunst/
