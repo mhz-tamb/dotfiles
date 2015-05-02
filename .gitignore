@@ -28,4 +28,7 @@
 !.vimperator/
 !.vimperator/colors/
 
+!.cmus/
+!.cmus/solarized-dark.theme
+
 *.swp
