@@ -39,6 +39,8 @@ set cursorline
 set ignorecase
 set nocompatible
 set expandtab
+set smarttab
+set smartindent
 
 set shiftwidth=4
 set tabstop=4
