@@ -2,7 +2,7 @@ colorscheme solarized-dark
 
 filetype *.pdf apvlv %f &
 filetype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm feh -rFXZ %f > /dev/null 2>&1 &
-filetype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv mplayer %f > /dev/null 2>&1 &
+filetype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2ts mplayer %f > /dev/null 2>&1 &
 
 fileviewer *.php,*.c,*.tpl,*.inc,*.js,*.css,*.less,*.py,*.html highlight -O ansi -c solarized-dark %f
 
