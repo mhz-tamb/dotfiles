@@ -53,6 +53,8 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
+set clipboard=unnamedplus
+
 set fileencodings=utf8,cp1251,cp866
 set pastetoggle=<F10>
 
