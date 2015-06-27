@@ -20,6 +20,24 @@ filetype *.rar
 
 fileviewer *.rar unrar %c
 
+filetype *.zip,*.jar,*.war,*.ear
+  \ {Mount with fuse-zip}
+  \ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR,
+  \ {View contents}
+  \ zip -sf %c | less,
+  \ tar -xf %c,
+
+fileviewer *.zip,*.jar,*.war,*.ear zip -sf %c
+
+" Сеть
+filetype *.ssh
+  \ {Mount with sshfs}
+  \ FUSE_MOUNT2|sshfs %PARAM %DESTINATION_DIR,
+
+filetype *.ftp
+  \ {Mount with curlftpfs}
+  \ FUSE_MOUNT2|curlftpfs -o ftp_port=-,,disable_eprt %PARAM %DESTINATION_DIR,
+
 nmap s :shell<cr>
 nmap w :view<cr>
 
