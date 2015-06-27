@@ -42,8 +42,8 @@ set expandtab
 set smarttab
 set smartindent
 
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set laststatus=2
 set mouse=a
 set t_Co=256

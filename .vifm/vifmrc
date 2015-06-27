@@ -1,9 +1,34 @@
 colorscheme solarized-dark
 
 filetype *.pdf apvlv %f &
-filetype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm feh -rFXZ %f > /dev/null 2>&1 &
+filetype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm feh -FXZ %d --start-at %d/%c > /dev/null 2>&1 &
 filetype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.vob,*.flv,*.m2ts mplayer %f > /dev/null 2>&1 &
 
 fileviewer *.php,*.c,*.tpl,*.inc,*.js,*.css,*.less,*.py,*.html highlight -O ansi -c solarized-dark %f
 
+" Архивы
+filetype *.tar.bz2,*.tbz2,*.tgz,*.tar.gz
+  \ {Mount with archivemount}
+  \ FUSE_MOUNT|archivemount %SOURCE_FILE %DESTINATION_DIR,
+
+fileviewer *.tgz,*.tar.gz tar -tzf %c
+fileviewer *.tar.bz2,*.tbz2 tar -tjf %c
+
+filetype *.rar
+  \ {Mount with rar2fs}
+  \ FUSE_MOUNT|rar2fs %SOURCE_FILE %DESTINATION_DIR,
+
+fileviewer *.rar unrar %c
+
+nmap s :shell<cr>
 nmap w :view<cr>
+
+" копировать путь к фалу
+nmap yf :!echo %c:p | xclip %i<cr>
+
+nmap <f3> :!less %f<cr>
+nmap <f4> :edit<cr>
+nmap <f5> :copy<cr>
+nmap <f6> :move<cr>
+nmap <f7> :mkdir<space>
+nmap <f8> :delete<cr>
