@@ -3,6 +3,7 @@
 !.gitmodules
 
 !.bashrc
+!.inputrc
 !.vimrc
 !.vimperatorrc
 !.Xdefaults

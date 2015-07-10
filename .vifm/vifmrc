@@ -47,7 +47,7 @@ nmap w :view<cr>
 " копировать путь к фалу
 nmap yf :!echo %c:p | xclip -selection clipboard %i<cr>
 
-nmap <f3> :!less %f<cr>
+nmap <f3> :view<cr>
 nmap <f4> :edit<cr>
 nmap <f5> :copy<cr>
 nmap <f6> :move<cr>
