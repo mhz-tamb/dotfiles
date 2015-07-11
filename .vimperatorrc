@@ -1,10 +1,16 @@
 set titlestring=
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
+set editor="vim --servername MASTER --remote-tab-silent"
+
 :highlight Hint -append font-size:10px;
 
 colorscheme indigo-fx3
 
-map <C-i> :pageinfo<CR>
+noremap j 5j
+noremap k 5k
+
+"Ctrl-a selects everything
+:inoremap <C-a> <Insert><C-a><Insert>
 
 map ё `
 map й q
