@@ -3,9 +3,12 @@
 !.gitmodules
 
 !.bashrc
+!.gtkrc-2.0
+!.gtkrc-2.0.mine
 !.inputrc
 !.vimrc
 !.vimperatorrc
+!.xinitrc
 !.Xdefaults
 
 !.config/
