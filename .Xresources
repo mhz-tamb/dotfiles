@@ -2,7 +2,7 @@ URxvt.font: xft:DejaVu Sans Mono for Powerline:size=9:antialias=true:hinting=tru
 URxvt.secondaryWheel: true
 URxvt.depth: 32
 URxvt.scrollBar: false
-URxvt.intensityStyles: false
+URxvt.intensityStyles: true
 URxvt.iso14755: False
 
 URxvt.perl-ext-common: matcher,url-select
