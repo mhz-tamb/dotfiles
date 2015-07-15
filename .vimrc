@@ -27,9 +27,11 @@ NeoBundle "flazz/vim-colorschemes"
 NeoBundle "ap/vim-css-color"
 NeoBundle "Shougo/neosnippet"
 NeoBundle "tpope/vim-fugitive"
+NeoBundle "tpope/vim-pathogen"
+NeoBundle "NLKNguyen/papercolor-theme"
 
 syntax on
-colorscheme solarized 
+colorscheme PaperColor
 set background=dark
 
 set nu
@@ -80,7 +82,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#enabled = 1
 
 let g:airline_powerline_fonts=1
-let g:airline_theme='solarized'
+let g:airline_theme='PaperColor'
 
 let g:syntastic_enable_balloons = 1
 
