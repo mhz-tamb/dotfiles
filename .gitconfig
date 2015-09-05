@@ -1,0 +1,14 @@
+[user]
+	name = Sergey Shiryaev
+	email = sergey@shiryaev.pro
+[push]
+	default = matching
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[diff]
+	external = ~/bin/gitdiff
+[difftool]
+	promt = false
+[merge]
+	tool = vimdiff

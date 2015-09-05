@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+vimdiff "$2" "$5" > /dev/tty

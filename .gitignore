@@ -1,5 +1,7 @@
 *
+!.gitconfig
 !.gitignore
+!.gitignore_global
 !.gitmodules
 
 !.bashrc
@@ -10,6 +12,9 @@
 !.vimperatorrc
 !.xinitrc
 !.Xdefaults
+
+!bin/
+!bin/gitdiff
 
 !.config/
 !.config/dunst/
