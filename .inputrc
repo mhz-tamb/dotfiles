@@ -1,2 +1,5 @@
+$include /etc/inputrc
+
 set editing-mode vi
 set keymap vi-command
+set completion-ignore-case On

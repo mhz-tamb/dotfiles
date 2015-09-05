@@ -28,6 +28,7 @@ NeoBundle "Shougo/neosnippet"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-pathogen"
 NeoBundle "NLKNguyen/papercolor-theme"
+NeoBundle "szw/vim-tags"
 
 syntax on
 colorscheme PaperColor
@@ -43,8 +44,8 @@ set expandtab
 set smarttab
 set smartindent
 
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set laststatus=2
 set mouse=a
 set t_Co=256
