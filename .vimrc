@@ -28,7 +28,6 @@ NeoBundle "Shougo/neosnippet"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-pathogen"
 NeoBundle "NLKNguyen/papercolor-theme"
-NeoBundle "szw/vim-tags"
 
 syntax on
 colorscheme PaperColor
@@ -99,3 +98,9 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 map <F2> :NERDTreeTabsToggle<CR>
 map <F3> :TagbarToggle<CR>
+
+
+autocmd Filetype php call SetPHPOptions()
+function! SetPHPOptions()
+    :call tagbar#autoopen(0)
+endfunction
