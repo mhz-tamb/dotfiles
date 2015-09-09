@@ -102,5 +102,5 @@ map <F3> :TagbarToggle<CR>
 
 autocmd Filetype php call SetPHPOptions()
 function! SetPHPOptions()
-    :call tagbar#autoopen(0)
+    if !&diff | call tagbar#autoopen(0) | endif
 endfunction
