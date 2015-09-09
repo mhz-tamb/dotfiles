@@ -1,0 +1,15 @@
+mpd_host = "/home/mhz/.mpd/socket"
+mpd_music_dir = "/home/mhz/music"
+
+autocenter_mode = "yes"
+user_interface = "alternative"
+
+visualizer_fifo_path = "/home/mhz/.mpd/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30" 
+visualizer_in_stereo = "yes"
+#visualizer_type = "wave" (spectrum/wave)
+visualizer_type = "spectrum" (spectrum/wave)
+
+main_window_color = "blue"
+main_window_highlight_color = "red"
