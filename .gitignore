@@ -24,6 +24,11 @@
 !.dwm/dwmrc
 !.dwm/config.example
 
+!.mpd/
+!.mpd/mpd.conf
+!.ncmpcpp/
+!.ncmpcpp/config
+
 !.vim/
 !.vim/bundle/
 !.vim/bundle/neobundle.vim/
