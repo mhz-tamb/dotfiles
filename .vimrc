@@ -99,6 +99,9 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 map <F2> :NERDTreeTabsToggle<CR>
 map <F3> :TagbarToggle<CR>
 
+" Open tag in new tab
+map <F4> :tab split <CR>:exec("tag ".expand("<cword>"))<CR>
+
 
 autocmd Filetype php call SetPHPOptions()
 function! SetPHPOptions()
