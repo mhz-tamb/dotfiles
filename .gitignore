@@ -24,6 +24,9 @@
 !.dwm/dwmrc
 !.dwm/config.example
 
+!.fonts
+!.fonts/*
+
 !.mpd/
 !.mpd/mpd.conf
 !.ncmpcpp/
