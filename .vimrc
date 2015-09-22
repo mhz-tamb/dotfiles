@@ -28,6 +28,7 @@ NeoBundle "Shougo/neosnippet"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-pathogen"
 NeoBundle "NLKNguyen/papercolor-theme"
+NeoBundle "terryma/vim-multiple-cursors"
 
 syntax on
 colorscheme PaperColor
