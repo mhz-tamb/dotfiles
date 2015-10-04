@@ -8,7 +8,7 @@ XML_PATH=/tmp/weather.xml
 /usr/bin/wget -O "${XML_PATH}" https://export.yandex.ru/weather-ng/forecasts/${ID}.xml > /dev/null 2>&1
 
 if [ $? -eq 0 ] && [ -f "${XML_PATH}" ]; then
-    echo -e "$(/usr/bin/xmllint --xpath '//*[local-name()="fact"]/*[local-name()="temperature"]/text()' "${XML_PATH}")\U00B0" > "${PATH}"
+    echo "$(/usr/bin/xmllint --xpath '//*[local-name()="fact"]/*[local-name()="temperature"]/text()' "${XML_PATH}")" > "${PATH}"
     if [ $? -ne 0 ]; then
         echo "Parse error!" > "${PATH}"
     fi

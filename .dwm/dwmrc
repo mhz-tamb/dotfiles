@@ -12,16 +12,18 @@ if [[ -z "${show_battery}" || ! -f "${battery_device}/capacity" || ! -f "${$adap
   show_battery=0
 fi
 
+delimiter=$(echo -e "\x05<\x01")
+degree=$(echo -e "\u00b0")
+
 while true
 do
-  delimiter=$(echo -e "\x05<\x01")  
 
   if [[ ${show_battery} -eq 1 ]]; then
     battery_status="${delimiter} `cat "${battery_device}/capacity"`% `[[ $(cat "${adapter_device}/online") -eq 1 ]] && echo AC || echo DC`"
   fi
 
   if [ -f "/tmp/weather" ]; then
-      weather="${delimiter} $(cat '/tmp/weather')"
+      weather="${delimiter} $(cat '/tmp/weather')${degree}"
   fi
 
   volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%" 
