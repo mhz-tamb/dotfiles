@@ -14,7 +14,7 @@
 !.Xdefaults
 
 !bin/
-!bin/gitdiff
+!bin/*
 
 !.config/
 !.config/dunst/

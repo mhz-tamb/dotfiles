@@ -20,6 +20,10 @@ do
     battery_status="${delimiter} `cat "${battery_device}/capacity"`% `[[ $(cat "${adapter_device}/online") -eq 1 ]] && echo AC || echo DC`"
   fi
 
+  if [ -f "/tmp/weather" ]; then
+      weather="${delimiter} $(cat '/tmp/weather')"
+  fi
+
   volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%" 
   
   if [ "$(xset -q | grep LED | awk '{ print $10 }' | cut -c5)" -eq 0 ]; then 
@@ -28,6 +32,6 @@ do
     lang="Ru";
   fi
   
-  xsetroot -name "${lang} ${delimiter} ${volume} ${battery_status} ${delimiter} $(date +'%R')"
+  xsetroot -name "${lang} ${weather} ${delimiter} ${volume} ${battery_status} ${delimiter} $(date +'%R')"
   sleep 0.5s
 done &
