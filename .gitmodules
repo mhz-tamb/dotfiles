@@ -7,6 +7,6 @@
 [submodule ".vifm/colors"]
 	path = .vifm/colors
 	url = https://github.com/vifm/vifm-colors.git
-[submodule ".fonts"]
-	path = .fonts
+[submodule ".fonts/powerline"]
+	path = .fonts/powerline
 	url = https://github.com/powerline/fonts.git
