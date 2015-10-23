@@ -7,6 +7,6 @@ snippet pre
 	print_r (${0:TARGET});
 	echo '</pre>';
 snippet ydump
-    yii\helpers\VarDumper::dump(${0:TARGET}, 10, true);
+    \yii\helpers\VarDumper::dump(${0:TARGET}, 10, true);
 snippet yend
-    Yii::$app->end(0);
+    \Yii::$app->end(0);
