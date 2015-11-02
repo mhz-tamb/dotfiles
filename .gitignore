@@ -30,6 +30,7 @@
 !.mpd/
 !.mpd/mpd.conf
 !.ncmpcpp/
+!.ncmpcpp/bindings
 !.ncmpcpp/config
 
 !.vim/
