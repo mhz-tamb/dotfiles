@@ -29,6 +29,8 @@ NeoBundle "tpope/vim-fugitive"
 NeoBundle "NLKNguyen/papercolor-theme"
 NeoBundle "terryma/vim-multiple-cursors"
 NeoBundle "airblade/vim-gitgutter"
+NeoBundle "tobyS/vmustache"
+NeoBundle "tobyS/pdv"
 
 syntax on
 colorscheme PaperColor
@@ -107,4 +109,6 @@ map <F4> :tab split <CR>:exec("tag ".expand("<cword>"))<CR>
 autocmd Filetype php call SetPHPOptions()
 function! SetPHPOptions()
     if !&diff | call tagbar#autoopen(0) | endif
+    let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates"
+    nnoremap <buffer> <C-p> :call pdv#DocumentCurrentLine()<CR>
 endfunction
