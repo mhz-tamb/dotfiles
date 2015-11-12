@@ -11,4 +11,8 @@ if [[ -f /etc/profile.d/bash-completion.sh ]]; then
   source /etc/profile.d/bash-completion.sh
 fi
 
+if [[ -f /usr/share/powerline/bash/powerline.sh ]]; then
+    source /usr/share/powerline/bash/powerline.sh
+fi
+
 alias vim='/usr/bin/vim --servername MASTER'

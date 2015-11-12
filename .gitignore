@@ -19,6 +19,8 @@
 !.config/
 !.config/dunst/
 !.config/dunst/dunstrc
+!.config/powerline/
+!.config/powerline/*
 
 !.dwm/
 !.dwm/dwmrc
