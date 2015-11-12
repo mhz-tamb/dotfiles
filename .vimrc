@@ -26,9 +26,9 @@ NeoBundle "powerman/vim-plugin-ruscmd"
 NeoBundle "ap/vim-css-color"
 NeoBundle "Shougo/neosnippet"
 NeoBundle "tpope/vim-fugitive"
-NeoBundle "tpope/vim-pathogen"
 NeoBundle "NLKNguyen/papercolor-theme"
 NeoBundle "terryma/vim-multiple-cursors"
+NeoBundle "airblade/vim-gitgutter"
 
 syntax on
 colorscheme PaperColor
@@ -62,7 +62,7 @@ set pastetoggle=<F10>
 
 hi CursorLine cterm=none
 
-let g:NERDTreeWinSize=45
+let g:NERDTreeWinSize=40
 let g:NERDTreeShowHidden=1
 
 let g:delimitMate_expand_cr = 1
