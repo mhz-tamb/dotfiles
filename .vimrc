@@ -29,8 +29,8 @@ NeoBundle "tpope/vim-fugitive"
 NeoBundle "NLKNguyen/papercolor-theme"
 NeoBundle "terryma/vim-multiple-cursors"
 NeoBundle "airblade/vim-gitgutter"
-NeoBundle "tobyS/vmustache"
-NeoBundle "tobyS/pdv"
+NeoBundle "tobyS/pdv", {"depends": "tobyS/vmustache"}
+NeoBundle "mattn/gist-vim", {"depends": "mattn/webapi-vim"}
 
 syntax on
 colorscheme PaperColor
@@ -87,6 +87,9 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='PaperColor'
 
 let g:syntastic_enable_balloons = 1
+
+let g:gist_show_privates = 1
+let g:gist_post_private = 1
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

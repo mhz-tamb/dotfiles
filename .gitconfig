@@ -1,6 +1,8 @@
 [user]
 	name = Sergey Shiryaev
 	email = sergey@shiryaev.pro
+[github]
+	user = mhz-tamb
 [push]
 	default = matching
 [core]
