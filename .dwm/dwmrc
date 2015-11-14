@@ -13,7 +13,12 @@ if [[ -z "${show_battery}" || ! -f "${battery_device}/capacity" || ! -f "${$adap
 fi
 
 delimiter=$(echo -e "\x05<\x01")
-degree=$(echo -e "\u00b0")
+
+glyph_clock=$(echo -e "\uf017")
+glyph_sound=$(echo -e "\uf028")
+glyph_weather=$(echo -e "\uf185")
+glyph_glob=$(echo -e "\uf11c")
+glyph_degree=$(echo -e "\u00b0")
 
 while true
 do
@@ -23,7 +28,7 @@ do
   fi
 
   if [ -f "/tmp/weather" ]; then
-      weather="${delimiter} $(cat '/tmp/weather')${degree}"
+      weather="$(cat '/tmp/weather')${glyph_degree}"
   fi
 
   volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')%" 
@@ -34,6 +39,6 @@ do
     lang="Ru";
   fi
   
-  xsetroot -name "${lang} ${weather} ${delimiter} ${volume} ${battery_status} ${delimiter} $(date +'%R')"
+  xsetroot -name "${glyph_glob} ${lang}   ${glyph_weather} ${weather}   ${glyph_sound} ${volume}   ${glyph_clock} $(date +'%R')"
   sleep 0.5s
 done &
