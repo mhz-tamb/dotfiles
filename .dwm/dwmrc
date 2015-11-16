@@ -19,9 +19,15 @@ glyph_weather=$(echo -e "\uf185")
 glyph_glob=$(echo -e "\uf11c")
 glyph_degree=$(echo -e "\u00b0")
 glyph_battery=$(echo -e "\uf0e7")
+glyph_mail=$(echo -e "\uf0e0")
 
 while true
 do
+    if [[ -f '/var/tmp/offlineimap' ]]; then
+        mail_count=$(cat '/var/tmp/offlineimap')
+    else
+        mail_count=0
+    fi
 
     if [[ ${show_battery} -eq 1 ]]; then
         battery_status="${glyph_battery} $(cat "${battery_device}/capacity")% `[[ $(cat "${adapter_device}/online") -eq 1 ]] && echo AC || echo DC`"
@@ -39,6 +45,6 @@ do
         lang="Ru";
     fi
 
-    xsetroot -name "${glyph_glob} ${lang}   ${glyph_weather} ${weather}   ${glyph_sound} ${volume}   ${battery_status}   ${glyph_clock} $(date +'%R')"
+    xsetroot -name "${glyph_mail} ${mail_count}   ${glyph_glob} ${lang}   ${glyph_weather} ${weather}   ${glyph_sound} ${volume}   ${battery_status}   ${glyph_clock} $(date +'%R')"
     sleep 0.5s
 done &
