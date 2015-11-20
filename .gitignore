@@ -32,6 +32,8 @@
 
 !.mpd/
 !.mpd/mpd.conf
+!.mplayer/
+!.mplayer/*
 !.ncmpcpp/
 !.ncmpcpp/bindings
 !.ncmpcpp/config
