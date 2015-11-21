@@ -10,9 +10,6 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
-filetype plugin indent on
-NeoBundleCheck
 
 NeoBundle "majutsushi/tagbar"
 NeoBundle "mattn/emmet-vim"
@@ -31,6 +28,11 @@ NeoBundle "terryma/vim-multiple-cursors"
 NeoBundle "airblade/vim-gitgutter"
 NeoBundle "tobyS/pdv", {"depends": "tobyS/vmustache"}
 NeoBundle "mattn/gist-vim", {"depends": "mattn/webapi-vim"}
+
+call neobundle#end()
+filetype plugin indent on
+NeoBundleCheck
+
 
 syntax on
 colorscheme PaperColor
