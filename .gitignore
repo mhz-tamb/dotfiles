@@ -34,6 +34,13 @@
 !.mpd/mpd.conf
 !.mplayer/
 !.mplayer/*
+
+!.mozilla
+!.mozilla/firefox
+!.mozilla/firefox/profiles.ini
+!.mozilla/firefox/mhz-tamb.default
+!.mozilla/firefox/mhz-tamb.default/user.js
+
 !.ncmpcpp/
 !.ncmpcpp/bindings
 !.ncmpcpp/config
