@@ -40,6 +40,8 @@
 !.mozilla/firefox/profiles.ini
 !.mozilla/firefox/mhz-tamb.default
 !.mozilla/firefox/mhz-tamb.default/user.js
+!.mozilla/firefox/mhz-tamb.default/extensions
+!.mozilla/firefox/mhz-tamb.default/extensions/VimFx-custom@vimfx.org
 
 !.ncmpcpp/
 !.ncmpcpp/bindings
@@ -54,6 +56,9 @@
 !.vifm/
 !.vifm/colors/
 !.vifm/vifmrc
+
+!.vimfx
+!.vimfx/*
 
 !.vimperator/
 !.vimperator/colors/
