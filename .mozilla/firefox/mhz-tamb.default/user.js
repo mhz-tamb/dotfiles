@@ -17,3 +17,7 @@ user_pref("browser.download.useDownloadDir", false);
 
 user_pref("devtools.theme", "dark");
 user_pref("devtools.editor.keymap", "vim");
+
+// google default search engine
+user_pref("browser.search.defaultenginename", "Google");
+user_pref("browser.search.suggest.enabled", false);
