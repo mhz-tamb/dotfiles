@@ -16,3 +16,6 @@ if [[ -f /usr/share/powerline/bash/powerline.sh ]]; then
 fi
 
 alias vim='/usr/bin/vim --servername MASTER'
+
+# Get Docker container ip address
+alias dockerip='docker inspect --format="{{.NetworkSettings.IPAddress}}"'
