@@ -1,4 +1,4 @@
-URxvt.font:	xft:DejaVu Sans Mono for Powerline:size=9:antialias=true:hinting=true
+URxvt.font:	xft:Cousine for Powerline:size=9:antialias=true:hinting=true
 
 URxvt.intensityStyles: false
 URxvt.iso14755:        false
