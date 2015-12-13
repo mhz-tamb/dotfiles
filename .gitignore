@@ -43,6 +43,10 @@
 !.mozilla/firefox/mhz-tamb.default/extensions
 !.mozilla/firefox/mhz-tamb.default/extensions/VimFx-custom@vimfx.org
 
+!.mutt
+!.mutt/colors
+!.mutt/colors/*
+
 !.ncmpcpp/
 !.ncmpcpp/bindings
 !.ncmpcpp/config
@@ -60,4 +64,5 @@
 !.vimperator/
 !.vimperator/colors/
 
+*.swo
 *.swp

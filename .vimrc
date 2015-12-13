@@ -23,9 +23,9 @@ NeoBundle "powerman/vim-plugin-ruscmd"
 NeoBundle "ap/vim-css-color"
 NeoBundle "Shougo/neosnippet"
 NeoBundle "tpope/vim-fugitive"
-NeoBundle "NLKNguyen/papercolor-theme"
 NeoBundle "terryma/vim-multiple-cursors"
 NeoBundle "airblade/vim-gitgutter"
+NeoBundle "altercation/vim-colors-solarized"
 NeoBundle "tobyS/pdv", {"depends": "tobyS/vmustache"}
 NeoBundle "mattn/gist-vim", {"depends": "mattn/webapi-vim"}
 
@@ -35,7 +35,7 @@ NeoBundleCheck
 
 
 syntax on
-colorscheme PaperColor
+colorscheme solarized
 set background=dark
 
 set nu
@@ -86,7 +86,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#enabled = 1
 
 let g:airline_powerline_fonts=1
-let g:airline_theme='PaperColor'
+let g:airline_theme='solarized'
 
 let g:syntastic_enable_balloons = 1
 
@@ -110,6 +110,8 @@ map <F3> :TagbarToggle<CR>
 " Open tag in new tab
 map <F4> :tab split <CR>:exec("tag ".expand("<cword>"))<CR>
 
+" Toggle Background
+call togglebg#map("<F5>")
 
 autocmd Filetype php call SetPHPOptions()
 function! SetPHPOptions()
