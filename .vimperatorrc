@@ -1,5 +1,6 @@
 set titlestring=
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
+set gui=nonavigation
 set editor="vim --servername MASTER --remote-tab-silent"
 
 :highlight Hint -append font-size:10px;
