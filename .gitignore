@@ -64,5 +64,7 @@
 !.vimperator/
 !.vimperator/colors/
 
+!.proxy.pac.example
+
 *.swo
 *.swp

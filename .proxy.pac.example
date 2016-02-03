@@ -1,0 +1,15 @@
+function FindProxyForURL(url, host) {
+    var server = 'proxy.mhz-tamb.ru:6666';
+    var hostList = new Array(
+        'rutracker.org',
+        '2ip.ru'
+    );
+
+    for (var i = 0; i < hostList.length; i++) {
+        if (localHostOrDomainIs(host, hostList[i])) {
+            return 'PROXY ' + server;
+        }
+    }
+
+	return 'DIRECT';
+}
