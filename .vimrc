@@ -14,6 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle "majutsushi/tagbar"
 NeoBundle "mattn/emmet-vim"
 NeoBundle "bling/vim-airline"
+NeoBundle "vim-airline/vim-airline-themes"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle "jistr/vim-nerdtree-tabs"
 NeoBundle "scrooloose/syntastic"
@@ -28,6 +29,7 @@ NeoBundle "airblade/vim-gitgutter"
 NeoBundle "altercation/vim-colors-solarized"
 NeoBundle "tobyS/pdv", {"depends": "tobyS/vmustache"}
 NeoBundle "mattn/gist-vim", {"depends": "mattn/webapi-vim"}
+NeoBundle "morhetz/gruvbox"
 
 call neobundle#end()
 filetype plugin indent on
@@ -35,7 +37,7 @@ NeoBundleCheck
 
 
 syntax on
-colorscheme solarized
+colorscheme gruvbox
 set background=dark
 
 set nu
@@ -86,7 +88,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#enabled = 1
 
 let g:airline_powerline_fonts=1
-let g:airline_theme='solarized'
+let g:airline_theme='gruvbox'
 
 let g:syntastic_enable_balloons = 1
 
