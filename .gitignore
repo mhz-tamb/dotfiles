@@ -66,5 +66,9 @@
 
 !.proxy.pac.example
 
+!.oh-my-zsh
+!.zlogin
+!.zshrc
+
 *.swo
 *.swp
